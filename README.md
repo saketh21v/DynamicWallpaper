@@ -5,6 +5,8 @@ Usage:
   <li><code>npm install && npm start</code></li>
   </ul>
 
+**Add Runner.vbs to startup.
+
 ### Changes to the clock
 <ul>
 <li>URL can be changed in the index.js.</li> 
