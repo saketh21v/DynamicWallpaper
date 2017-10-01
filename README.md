@@ -1,6 +1,7 @@
 # DynamicWallpaper
 Dynamic Wallpaper for Windows based on webpages like lagom.io
 Usage:
-  <ul>
-  <li>`npm install`</li>
-  <li>`npm start`</li>
+  <ol>
+  <li><code>npm install</code></li>
+  <li><code>npm start</code></li>
+  </ol>
