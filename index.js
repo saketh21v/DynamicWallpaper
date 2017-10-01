@@ -27,14 +27,14 @@ var dun = async function () {
     });
 
     await page.property('zoomFactor', 2);
-    // await page.on('onResourceRequested', function (requestData) {
-    //     console.info('Requesting', requestData.url);
-    // });
+    await page.on('onResourceRequested', function (requestData) {
+        console.info('Requesting', requestData.url);
+    });
     const status = await page.open(url);
     var f = function () {
         page.render(_RENDER_FILE);
         wallpaper.set(_RENDER_FILE);
-        // console.log("Rendered");
+        console.log("Rendered");
         setTimeout(f, _FAST);
     };
     f();
