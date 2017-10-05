@@ -14,6 +14,13 @@ const _VERY_FAST = 200;
 
 const _RENDER_FILE = "render.jpg";
 
+var f = function (page) {
+    page.render(_RENDER_FILE);
+    wallpaper.set(_RENDER_FILE);
+    // console.log("Rendered");
+    setTimeout(()=>{f(page);}, _NORMAL);
+};
+
 var dun = async function () {
     const instance = await phantom.create();
     const page = await instance.createPage();
@@ -31,14 +38,8 @@ var dun = async function () {
     //     console.info('Requesting', requestData.url);
     // });
     const status = await page.open(url);
-    var f = function () {
-        page.render(_RENDER_FILE);
-        wallpaper.set(_RENDER_FILE);
-        // console.log("Rendered");
-        setTimeout(f, _NORMAL);
-    };
-    f();
     // await instance.exit();
+    f(page)
 }
 
 dun();
