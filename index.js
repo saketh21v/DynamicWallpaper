@@ -35,7 +35,7 @@ var dun = async function () {
         page.render(_RENDER_FILE);
         wallpaper.set(_RENDER_FILE);
         // console.log("Rendered");
-        setTimeout(f, _FAST);
+        setTimeout(f, _NORMAL);
     };
     f();
     // await instance.exit();
