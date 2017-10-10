@@ -5,7 +5,7 @@ Usage*:
   <li><code>npm install && npm start</code></li>
   </ul>
   
-##### * Requires phantomjs to run
+##### * Requires phantomjs to run http://phantomjs.org/download.html
 ##### ** Add Runner.vbs to startup.
 
 ### Changes to the clock
