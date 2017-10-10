@@ -1,12 +1,12 @@
 # DynamicWallpaper
 Dynamic Wallpaper for Windows based on webpages like lagom.io.</br>
-Usage:
+Usage*:
   <ul>
-  <li><code>npm install && npm start</code></li>*
+  <li><code>npm install && npm start</code></li>
   </ul>
-
-* Requires phantomjs to run
-** Add Runner.vbs to startup.
+  
+##### * Requires phantomjs to run
+##### ** Add Runner.vbs to startup.
 
 ### Changes to the clock
 <ul>
